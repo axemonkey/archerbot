@@ -111,7 +111,6 @@ const leaveEvt = [
   'Thank God for small miracles!',
   'Okay... Love our little talks!',
   'HOORAY!',
-  'https://m.popkey.co/cb43a2/OXWKY.gif',
   'https://giphy.com/gifs/hulu-fx-archer-l2Sqbc3KfIDUxou1W',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
   'https://tenor.com/view/archer-yay-excited-gif-5502995',

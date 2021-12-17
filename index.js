@@ -65,6 +65,11 @@ const chance = (percent) => {
   return Math.ceil(Math.random() * 100) <= percent;
 };
 
+const getUserById = async (userId) => {
+	const user = await ArcherBot.client.users.info({user: userId});
+	return user;
+};
+
 
 ArcherBot.message(async ({ message, say }) => {
 	if (checkForPhrasing(message.text)) {
@@ -89,6 +94,36 @@ ArcherBot.message(async ({ message, say }) => {
 	else if (checkForArcherMention(message.text)) {
 		const archerResponse = getResponse('random');
 		await say(archerResponse);
+	}
+});
+
+ArcherBot.event('member_joined_channel', async ({ say }) => {
+	if (chance(25)) {
+		const archerResponse = getResponse('diatribeResponse');
+		await say(archerResponse);
+	}
+	else if (chance(70)) {
+		const archerResponse = getResponse('joinEvt');
+		await say(archerResponse);
+	}
+});
+ArcherBot.event('member_left_channel', async ({ event, say }) => {
+	if (chance(65)) {
+		const archerResponse = getResponse('leaveEvt');
+		await say(archerResponse);
+	}
+
+	if (chance(25)) {
+		const { user } = await getUserById(event.user);
+		let name;
+		if (user.profile && user.profile.first_name) {
+			name = user.profile.first_name;
+		} else {
+			name = user.name;
+		}
+		if (name) {
+			await say(`That is classic ${name}.`);
+		}
 	}
 });
 
