@@ -42,7 +42,6 @@ const joinEvt = [
   'Well that’s just great.',
   'Oh, c’mon, are you kidding me?! You’re really gonna leave me out here?!',
   //'And now we are all dumber',
-  'https://m.popkey.co/0e15f2/47D7R.gif',
   'https://giphy.com/gifs/hulu-fx-archer-l2SpYMbkUKDLKy25i',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
   'https://tenor.com/view/archer-sterling-archer-jesus-christ-can-the-mind-vomit-mind-gif-5069168',
