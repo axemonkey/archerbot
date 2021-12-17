@@ -13,6 +13,8 @@ const phrasing = [
   'Why are we not still doing phrasing?',
   'Er, phrasing.',
   'Phrasing!\nAlso, has anyone seen Woodhouse?',
+  'Are we not saying \"Phrasing\" any more? Which, that’s fine, whatever, but if we’re doing a new thing and nobody told me, *that* I’d have a problem with.',
+  'What was wrong with \"Phrasing\"?',
 
   'http://www.tvovermind.com/wp-content/uploads/2013/07/Archer-GIFs-10.gif',
   'https://tenor.com/view/archer-sterling-gif-5414245',
@@ -23,7 +25,7 @@ const phrasing = [
 
 const diatribeResponse = [
   'Paging Kenny Loggins because you’re in the *DANGER ZONE!*',
-  'Danger zone. Duh!\nHaven’t you ever seen Top Gun? Or like heard of legendary rock singer, songwriter, guitarist Kenny Freakin’ Loggins!?',
+  'Danger zone. Duh!\nHaven’t you ever seen Top Gun?\nOr like heard of legendary rock singer, songwriter, guitarist Kenny Freakin’ Loggins!?',
   '🎵 DANGER ZONE! 🎵',
   'https://giphy.com/gifs/archer-fx-sterling-cbAb0vWhJqA2k',
   'https://giphy.com/gifs/archer-space-race-danger-zone-xGbA1gRCAj1jW',
@@ -49,6 +51,9 @@ const joinEvt = [
   'https://tenor.com/view/archer-gif-5965699',
   'https://tenor.com/view/archer-yay-excited-gif-5502995',
   'https://www.tvovermind.com/wp-content/uploads/2013/07/Archer-GIFs-9.gif',
+  'https://tenor.com/view/archer-boop-poke-nose-gif-5754719',
+  'https://tenor.com/view/archer-boop-submarine-mission-gif-8686312',
+  'https://tenor.com/view/archer-sterling-archer-ray-gillette-boop-nose-gif-5433214',
 ];
 
 const dangerZoneResponse = [
@@ -56,8 +61,9 @@ const dangerZoneResponse = [
   'WOOOOO!!!!',
   'God, I love Kenny Loggins.',
   'https://giphy.com/gifs/archer-skytanic-danger-zone-H8iL56bXGjVE4',
-  'https://tenor.com/view/archer-top-gun-jet-drive-parody-gif-5469185',
-  'https://tenor.com/view/highfive-archer-cyril-topgun-gif-5655940',
+  'https://tenor.com/view/archer-kenny-loggins-danger-zone-parody-silly-gif-5965692',
+  'https://tenor.com/view/danger-zone-archer-zone-the-zone-would-be-one-of-danger-gif-15695624',
+
 ];
 
 const cantWont = ['Can’t or won’t?'];
@@ -79,6 +85,14 @@ const random = [
   'Don’t say, \"high function alcoholism\"',
   'Barry? Is that you?',
   'JUST THE TIP!',
+  'I can’t hear you over the deafening sound of my own AWESOMENESS!',
+  'Sour mix? In a margarita? What is this, Auschwitz?',
+  'Bloody Mary, full of vodka, blessed are you among cocktails. Pray for me now and at the hour of my death, which I hope is soon. Amen.',
+  'Eat a dick, jungle!',
+  'Hey, can I order some pie? Or have you single-handedly depleted the Global Strategic Pie Reserves?',
+  'Ray forgot the gum!',
+  'I WANNA FLY THE TRAIN!',
+
   'https://giphy.com/gifs/archerfx-fxx-archerfxx-fxnetworks-dAQnJ2qMmMzA0tqmeG',
   'https://giphy.com/gifs/archer-sterling-bKVmcaeGR8LF6',
   'https://giphy.com/gifs/archer-oc-mr-6pxG2dThniE5G',
@@ -94,14 +108,16 @@ const random = [
   'https://giphy.com/gifs/archer-reaction-n36PcpdU9bXcQ',
   'https://giphy.com/gifs/archerfx-punch-fxx-archerfxx-JNmjxjfdlnuA4CZWeB',
   'https://tenor.com/view/archer-sterling-archer-drink-drinking-chug-gif-5244712',
+  'https://tenor.com/view/archer-pray-for-me-drinking-gif-8114944',
 ]
 
 const rampage = [
   'Did you say rampage!?',
   'RAAAMPAGE!!! WOOOO!',
+  'Closet rampage!',
   'https://tenor.com/view/rampage-archer-gif-4833675',
   'https://giphy.com/gifs/archer-sterling-rampage-eSlPcitchA0Cs',
-  'https://tenor.com/view/archer-rampage-revenge-gif-8155725',
+  'https://tenor.com/view/revenge-vengeance-archer-gif-5544133',
 ]
 
 const leaveEvt = [
@@ -110,12 +126,14 @@ const leaveEvt = [
   'Thank God for small miracles!',
   'Okay... Love our little talks!',
   'HOORAY!',
+  'Okay then I guess just pout!',
   'https://giphy.com/gifs/hulu-fx-archer-l2Sqbc3KfIDUxou1W',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
   'https://tenor.com/view/archer-yay-excited-gif-5502995',
   'https://tenor.com/view/archer-typical-frustrating-frustrated-gif-11190638',
   'https://tenor.com/view/archer-gif-9632983\nHere, you were just leaving!',
   'https://tenor.com/view/archer-sterling-archer-pam-poovey-drink-drinking-gif-5121382',
+  'https://tenor.com/view/archer-good-talk-good-talk-cool-gif-16912300',
 ];
 
 const welcomeMsg = 'Was anyone looking for the worlds greatest secret agent?' +
