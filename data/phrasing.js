@@ -178,7 +178,8 @@ const phrases = [
  * @param TRIGGER_VAL
  * @returns {boolean}
  */
- function isPhrasing(msg, TRIGGER_VAL) {
+function isPhrasing(msg, TRIGGER_VAL) {
+  if (msg) {
     let sentences = msg.match(SENTENCE_REGEXP);
     if (!sentences || sentences.length === 0) {
       sentences = [msg];
@@ -188,7 +189,7 @@ const phrases = [
     for (const sentence of sentences) {
       let pointVal = 0;
       const words = sentence.split(' ');
-      
+
       for (const word of words) {
         for (const keyword of [adjectives, verbs, nouns]) {
           pointVal += calcPhrasingScore(keyword, word, pointVal);
@@ -205,6 +206,10 @@ const phrases = [
       const phraseRegex = new RegExp(phrase, 'gi');
       return phraseRegex.test(msg);
     });
+  }
+
+  return false;
+
 };
 
 function calcPhrasingScore(wordMap, word) {

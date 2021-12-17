@@ -20,24 +20,39 @@ const RAMPAGE_REGEXP = /rampage/ig;
 
 
 const checkForPhrasing = (text) => {
-	return phrasing.isPhrasing(text, PHRASING_TRIGGER_POINT_VAL);
+	if (text) {
+		return phrasing.isPhrasing(text, PHRASING_TRIGGER_POINT_VAL);
+	}
+	return false;
 };
 
 const checkForDangerZone = (text) => {
-	return DANGER_ZONE_REGEXP.test(text);
+	if (text) {
+		return DANGER_ZONE_REGEXP.test(text);
+	}
+	return false;
 };
 
 const checkForCantWont = (text) => {
-	return CANT_WONT_REGEXP.test(text);
+	if (text) {
+		return CANT_WONT_REGEXP.test(text);
+	}
+	return false;
 };
 
 const checkForRampage = (text) => {
-	return RAMPAGE_REGEXP.test(text);
+	if (text) {
+		return RAMPAGE_REGEXP.test(text);
+	}
+	return false;
 };
 
 const checkForArcherMention = (text) => {
-	return text.toLowerCase().indexOf('archer') > -1 ||
-	  text.toLowerCase().indexOf('sterling') > -1;
+	if (text) {
+		return text.toLowerCase().indexOf('archer') > -1 ||
+		  text.toLowerCase().indexOf('sterling') > -1;
+	}
+	return false;
 };
 
 const getResponse = (type) => {
@@ -46,13 +61,13 @@ const getResponse = (type) => {
 	return responsesOfType[pluckResponse];
 };
 
+const chance = (percent) => {
+  return Math.ceil(Math.random() * 100) <= percent;
+};
+
 
 ArcherBot.message(async ({ message, say }) => {
-	if (message.text === 'something') {
-		await say(`Hello, <@${message.user}>`);
-	}
-
-	else if (checkForPhrasing(message.text)) {
+	if (checkForPhrasing(message.text)) {
 		const archerResponse = getResponse('phrasing');
 		await say(archerResponse);
 	}
@@ -81,5 +96,5 @@ ArcherBot.message(async ({ message, say }) => {
 
 
 
-console.log('Starting...');
+console.log('Starting ArcherBot...');
 ArcherBot.start(3000);
