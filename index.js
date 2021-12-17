@@ -81,5 +81,5 @@ ArcherBot.message(async ({ message, say }) => {
 
 
 
-
+console.log('Starting...');
 ArcherBot.start(3000);
