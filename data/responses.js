@@ -43,6 +43,7 @@ const joinEvt = [
   'Great. Way to keep a low profile.',
   'Well that’s just great.',
   'Oh, c’mon, are you kidding me?! You’re really gonna leave me out here?!',
+  'It’s TV’s Michael Gray!',
   //'And now we are all dumber',
   'https://giphy.com/gifs/hulu-fx-archer-l2SpYMbkUKDLKy25i',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
@@ -63,7 +64,16 @@ const dangerZoneResponse = [
   'https://giphy.com/gifs/archer-skytanic-danger-zone-H8iL56bXGjVE4',
   'https://tenor.com/view/archer-kenny-loggins-danger-zone-parody-silly-gif-5965692',
   'https://tenor.com/view/danger-zone-archer-zone-the-zone-would-be-one-of-danger-gif-15695624',
+];
 
+const ocelotResponse = [
+  'BABOU!!!',
+  'SERPENTINE, BABOU! SERPENTINE!',
+  'You gotta get a tire swing, a tree branch, something. That ocelot is DESPERATE for something to play with. It’s like Meow-schwitz in there',
+  'Hear that? They called you \"exotic\".',
+
+  'https://cdn.quotesgram.com/img/80/59/899629778-EKsKs.jpg',
+  'https://media.giphy.com/media/KYlTGWshxs9fG/giphy.gif',
 ];
 
 const cantWont = ['Can’t or won’t?'];
@@ -151,6 +161,7 @@ function buildResponses() {
     rampage,
     cantWont,
     welcomeMsg,
+    ocelotResponse,
   }
 }  
 
@@ -181,10 +192,14 @@ function all() {
 
   responses.rampage.forEach(function (rampageResp) {
     allResponses.push({type: 'RAMPAGE', text: rampageResp})
-  })
+  });
 
   responses.random.forEach(function (randomResp){
     allResponses.push({type: 'RANDOM', text: randomResp});
+  });
+
+  responses.ocelotResponse.forEach(function (ocelotResp){
+    allResponses.push({type: 'OCELOT', text: ocelotResp});
   });
 
   return allResponses;

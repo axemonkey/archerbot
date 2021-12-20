@@ -17,6 +17,7 @@ const VOWEL_REGEXP = (/a|e|i|o|u|y/ig);
 const DANGER_ZONE_REGEXP =
   /((danger|peril|trouble|unsafe|deadly|precarious|risky)+.*(zone|area|place|location|spot|realm|territory|section)+|(zone|area|place|location|spot|realm|territory|section)+.*(danger|peril|trouble|unsafe|deadly|precarious|risky)+)/ig;
 const RAMPAGE_REGEXP = /rampage/ig;
+const OCELOT_REGEXP = /ocelot/ig;
 
 
 const checkForPhrasing = (text) => {
@@ -43,6 +44,13 @@ const checkForCantWont = (text) => {
 const checkForRampage = (text) => {
 	if (text) {
 		return RAMPAGE_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForOcelot = (text) => {
+	if (text) {
+		return OCELOT_REGEXP.test(text);
 	}
 	return false;
 };
@@ -88,6 +96,11 @@ ArcherBot.message(async ({ message, say }) => {
 
 	else if (checkForRampage(message.text)) {
 		const archerResponse = getResponse('rampage');
+		await say(archerResponse);
+	}
+
+	else if (checkForOcelot(message.text)) {
+		const archerResponse = getResponse('ocelot');
 		await say(archerResponse);
 	}
 
