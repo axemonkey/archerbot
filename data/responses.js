@@ -66,13 +66,12 @@ const dangerZoneResponse = [
   'https://tenor.com/view/danger-zone-archer-zone-the-zone-would-be-one-of-danger-gif-15695624',
 ];
 
-const ocelotResponse = [
+const ocelot = [
   'BABOU!!!',
   'SERPENTINE, BABOU! SERPENTINE!',
   'You gotta get a tire swing, a tree branch, something. That ocelot is DESPERATE for something to play with. It’s like Meow-schwitz in there',
   'Hear that? They called you \"exotic\".',
 
-  'https://cdn.quotesgram.com/img/80/59/899629778-EKsKs.jpg',
   'https://media.giphy.com/media/KYlTGWshxs9fG/giphy.gif',
 ];
 
@@ -161,7 +160,7 @@ function buildResponses() {
     rampage,
     cantWont,
     welcomeMsg,
-    ocelotResponse,
+    ocelot,
   }
 }  
 
@@ -198,10 +197,11 @@ function all() {
     allResponses.push({type: 'RANDOM', text: randomResp});
   });
 
-  responses.ocelotResponse.forEach(function (ocelotResp){
+  responses.ocelot.forEach(function (ocelotResp){
     allResponses.push({type: 'OCELOT', text: ocelotResp});
   });
 
+  console.dir(allResponses);
   return allResponses;
 }
 
