@@ -201,7 +201,7 @@ function all() {
     allResponses.push({type: 'OCELOT', text: ocelotResp});
   });
 
-  console.dir(allResponses);
+  // console.dir(allResponses);
   return allResponses;
 }
 
