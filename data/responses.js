@@ -17,10 +17,9 @@ const phrasing = [
   'What was wrong with \"Phrasing\"?',
 
   'http://www.tvovermind.com/wp-content/uploads/2013/07/Archer-GIFs-10.gif',
-  'https://tenor.com/view/archer-sterling-gif-5414245',
-  'https://tenor.com/view/archer-phrasing-gif-6179878',
-  'https://tenor.com/view/phrasing-words-wording-boom-archer-gif-5458260',
-  'https://tenor.com/view/archer-phrasing-gorilla-poko-funny-gif-23015757',
+  'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGVteDdmb2s2YnFqOHU4eGozZjF5ZW1vZTF3dDYxMXY2NDFndWt2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5ROlkuRjBdWKRGTYTy/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExODB6ZjlycmdoZnZ0MHc1YzFiOGVhb2kyMmVjb3J0dWRuZXgwYXByYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7tuK9itVBsD3q/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDYzN3NwYThzZzV4bjYyc2hvMDZvMTdhcWcyaWd3cDE1bTNtMXhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22p0JIQMkAxqg/giphy.gif',
 ];
 
 const diatribeResponse = [
@@ -31,7 +30,6 @@ const diatribeResponse = [
   'https://giphy.com/gifs/archer-space-race-danger-zone-xGbA1gRCAj1jW',
   'https://giphy.com/gifs/archer-reactiongifs-mrw-Kz420G0aGw5mU',
   'https://giphy.com/gifs/archer-lana-sterling-7WqaymtUo9qFO',
-  'https://tenor.com/view/highfive-archer-cyril-topgun-gif-5655940',
   'https://www.tvovermind.com/wp-content/uploads/2013/07/Archer-GIFs-11.gif',
 ];
 
@@ -47,14 +45,7 @@ const joinEvt = [
   //'And now we are all dumber',
   'https://giphy.com/gifs/hulu-fx-archer-l2SpYMbkUKDLKy25i',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
-  'https://tenor.com/view/archer-sterling-archer-jesus-christ-can-the-mind-vomit-mind-gif-5069168',
-  'https://tenor.com/view/archer-sterling-archer-theres-not-enough-liquor-and-therapy-undo-gif-5180168',
-  'https://tenor.com/view/archer-gif-5965699',
-  'https://tenor.com/view/archer-yay-excited-gif-5502995',
   'https://www.tvovermind.com/wp-content/uploads/2013/07/Archer-GIFs-9.gif',
-  'https://tenor.com/view/archer-boop-poke-nose-gif-5754719',
-  'https://tenor.com/view/archer-boop-submarine-mission-gif-8686312',
-  'https://tenor.com/view/archer-sterling-archer-ray-gillette-boop-nose-gif-5433214',
 ];
 
 const dangerZoneResponse = [
@@ -62,8 +53,10 @@ const dangerZoneResponse = [
   'WOOOOO!!!!',
   'God, I love Kenny Loggins.',
   'https://giphy.com/gifs/archer-skytanic-danger-zone-H8iL56bXGjVE4',
-  'https://tenor.com/view/archer-kenny-loggins-danger-zone-parody-silly-gif-5965692',
-  'https://tenor.com/view/danger-zone-archer-zone-the-zone-would-be-one-of-danger-gif-15695624',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2Fsa283MjR4dHVpenhqMHhrNGZlcnJsM25sZDZydDhsNW5tdncwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kz420G0aGw5mU/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJlbHhsajA4ZGdvZDZnY3JhbWh5M2d1MzFsbnB5emZkY3dpYWc4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cbAb0vWhJqA2k/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnUyZ3lqeGZkMGlxbGJpYmdiNnN2YXdqdGQ0bnpta2QzY285emYybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xGbA1gRCAj1jW/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExODh4MzYwMDR5aWZ4NjRiNjQ1dGgwejhyYmxuYnJkOHRzbDk2NjlzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Uq8YQehOCGWRMtS5UL/giphy.gif',
 ];
 
 const ocelot = [
@@ -116,17 +109,15 @@ const random = [
   'https://giphy.com/gifs/l0RVz7WjhgZLQSgxEV',
   'https://giphy.com/gifs/archer-reaction-n36PcpdU9bXcQ',
   'https://giphy.com/gifs/archerfx-punch-fxx-archerfxx-JNmjxjfdlnuA4CZWeB',
-  'https://tenor.com/view/archer-sterling-archer-drink-drinking-chug-gif-5244712',
-  'https://tenor.com/view/archer-pray-for-me-drinking-gif-8114944',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhqcXBhajBocW5zbzR3cG5sZzdjdzBscGlxZjZkNWtpaTY5dngwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5zbOuFCA68Cs/giphy.gif',
 ]
 
 const rampage = [
   'Did you say rampage!?',
   'RAAAMPAGE!!! WOOOO!',
   'Closet rampage!',
-  'https://tenor.com/view/rampage-archer-gif-4833675',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3RxaHR4a3R2MXhjZ2cydjY5eDlzaXM0ajlsczRtdG1xejhtOXphcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/A5RAgv4HaIeei05OOP/giphy.gif',
   'https://giphy.com/gifs/archer-sterling-rampage-eSlPcitchA0Cs',
-  'https://tenor.com/view/revenge-vengeance-archer-gif-5544133',
 ]
 
 const leaveEvt = [
@@ -162,7 +153,7 @@ function buildResponses() {
     welcomeMsg,
     ocelot,
   }
-}  
+}
 
 function all() {
   const allResponses = [];

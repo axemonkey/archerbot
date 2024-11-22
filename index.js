@@ -90,9 +90,9 @@ ArcherBot.message(async ({ message, say }) => {
 		await say(archerResponse);
 	}
 
-	else if (checkForCantWont(message.text)) {
-		await say('Can’t or won’t?');
-	}
+	// else if (checkForCantWont(message.text)) { // this is kind of annoying
+	// 	await say('Can’t or won’t?');
+	// }
 
 	else if (checkForRampage(message.text)) {
 		const archerResponse = getResponse('rampage');
