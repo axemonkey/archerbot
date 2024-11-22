@@ -20,6 +20,12 @@ const phrasing = [
   'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGVteDdmb2s2YnFqOHU4eGozZjF5ZW1vZTF3dDYxMXY2NDFndWt2aSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5ROlkuRjBdWKRGTYTy/giphy.gif',
   'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExODB6ZjlycmdoZnZ0MHc1YzFiOGVhb2kyMmVjb3J0dWRuZXgwYXByYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7tuK9itVBsD3q/giphy.gif',
   'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDYzN3NwYThzZzV4bjYyc2hvMDZvMTdhcWcyaWd3cDE1bTNtMXhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22p0JIQMkAxqg/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnM1NzFmZTFzNXcxMXMxamJhcHRnZzh3YXBtbml0ZGIxcnJvbmlxdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BYhoMtJMQsYVy/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG54M2MzM2tucHA3a2VoaTQyeWJnZjBhd2d2OXhoazRobG5oem9wYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/22p0JIQMkAxqg/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnF1aGFwMTI1OG13cXA1NnczM3o1NzdsZWJta2JlOG5zeGhneW9udSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z75OjWknCTI6k/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnhhczFsaTdiN2d3YnAxamJmbHF4bW84a25iZ2djOTVhNHYybWlmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1j36v2BuzK6vC/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjYzcTBwZWp1MnE1dHpoZm5vMzZ6azJubW93NXQ3YmdodjVuZHZ6NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BmX38GoChnxRe/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExazdpMDJ5YzV0bnY5YTZvcDY0ZzBiNWJ6MzFjcmVhNzlrMzBxYng1OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Fh4Z6HJh9Yzh6/giphy.gif',
 ];
 
 const diatribeResponse = [
@@ -52,6 +58,8 @@ const dangerZoneResponse = [
   'Hey, that’s my line',
   'WOOOOO!!!!',
   'God, I love Kenny Loggins.',
+  '🎵 DANGER ZONE! 🎵',
+  'Paging Kenny Loggins because you’re in the *DANGER ZONE!*',
   'https://giphy.com/gifs/archer-skytanic-danger-zone-H8iL56bXGjVE4',
   'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2Fsa283MjR4dHVpenhqMHhrNGZlcnJsM25sZDZydDhsNW5tdncwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kz420G0aGw5mU/giphy.gif',
   'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJlbHhsajA4ZGdvZDZnY3JhbWh5M2d1MzFsbnB5emZkY3dpYWc4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cbAb0vWhJqA2k/giphy.gif',
@@ -68,7 +76,13 @@ const ocelot = [
   'https://media.giphy.com/media/KYlTGWshxs9fG/giphy.gif',
 ];
 
-const cantWont = ['Can’t or won’t?'];
+const jazzHands = [
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3JrMTVxam01ZmxkOGhpdWYyMHF3cTdjamZrNDYxMWxucTM4eTd3OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/142UITjG5GjIRi/giphy.gif',
+];
+
+const cantWont = [
+  'Can’t or won’t?',
+];
 
 const random = [
   'I’m not saying I invented the turtleneck, but I was the first person to realise its potential as a tactical garment. The tactical turtleneck! The... tactleneck.',
@@ -110,6 +124,11 @@ const random = [
   'https://giphy.com/gifs/archer-reaction-n36PcpdU9bXcQ',
   'https://giphy.com/gifs/archerfx-punch-fxx-archerfxx-JNmjxjfdlnuA4CZWeB',
   'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhqcXBhajBocW5zbzR3cG5sZzdjdzBscGlxZjZkNWtpaTY5dngwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5zbOuFCA68Cs/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmRiMmw3em4xejFnZ2hndXlwYTNjemJyeHM0eTAzeDYyaDM0eTZmZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D6FQLH3DK4lPO/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmw3ZXJ6cWxqdDRuOTJ4aDFsdGV2ZzVvNTNteTlud21pcG9jODl4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10DVcUchEQUdFu/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzJ6Zm54anh6amh4dDJzeGxsYTFhN3MzcDM3c3N4ZGk1enZta3VkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OBuQCM5IlgGs/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWxlZ3NnNGFncXFkd3pzbGpiaThoYW00N2RvMnQ0MHFhazZqeWV1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5zbOuFCA68Cs/giphy.gif',
+  'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3gwazl6ZHEyOHRmZTlsa253cnMwdWFkbWg1c3EycDllZ2ZiYjJ2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6pxG2dThniE5G/giphy.gif',
 ]
 
 const rampage = [
@@ -129,11 +148,6 @@ const leaveEvt = [
   'Okay then I guess just pout!',
   'https://giphy.com/gifs/hulu-fx-archer-l2Sqbc3KfIDUxou1W',
   'https://giphy.com/gifs/archerfx-archer-archerfxx-disconcerting-RhfQibBWggMZMLlRdl',
-  'https://tenor.com/view/archer-yay-excited-gif-5502995',
-  'https://tenor.com/view/archer-typical-frustrating-frustrated-gif-11190638',
-  'https://tenor.com/view/archer-gif-9632983\nHere, you were just leaving!',
-  'https://tenor.com/view/archer-sterling-archer-pam-poovey-drink-drinking-gif-5121382',
-  'https://tenor.com/view/archer-good-talk-good-talk-cool-gif-16912300',
 ];
 
 const welcomeMsg = 'Was anyone looking for the worlds greatest secret agent?' +
@@ -152,6 +166,7 @@ function buildResponses() {
     cantWont,
     welcomeMsg,
     ocelot,
+    jazzHands,
   }
 }
 
@@ -188,8 +203,12 @@ function all() {
     allResponses.push({type: 'RANDOM', text: randomResp});
   });
 
-  responses.ocelot.forEach(function (ocelotResp){
-    allResponses.push({type: 'OCELOT', text: ocelotResp});
+  responses.ocelot.forEach(function (ocelotResp) {
+    allResponses.push({ type: 'OCELOT', text: ocelotResp });
+  });
+
+  responses.jazzHands.forEach(function (jazzHandsResp) {
+    allResponses.push({ type: 'JAZZ_HANDS', text: jazzHandsResp });
   });
 
   // console.dir(allResponses);

@@ -18,6 +18,7 @@ const DANGER_ZONE_REGEXP =
   /((danger|peril|trouble|unsafe|deadly|precarious|risky)+.*(zone|area|place|location|spot|realm|territory|section)+|(zone|area|place|location|spot|realm|territory|section)+.*(danger|peril|trouble|unsafe|deadly|precarious|risky)+)/ig;
 const RAMPAGE_REGEXP = /rampage/ig;
 const OCELOT_REGEXP = /ocelot/ig;
+const JAZZHANDS_REGEXP = /jazz hands/ig;
 
 
 const checkForPhrasing = (text) => {
@@ -34,12 +35,12 @@ const checkForDangerZone = (text) => {
 	return false;
 };
 
-const checkForCantWont = (text) => {
-	if (text) {
-		return CANT_WONT_REGEXP.test(text);
-	}
-	return false;
-};
+// const checkForCantWont = (text) => {
+// 	if (text) {
+// 		return CANT_WONT_REGEXP.test(text);
+// 	}
+// 	return false;
+// };
 
 const checkForRampage = (text) => {
 	if (text) {
@@ -51,6 +52,13 @@ const checkForRampage = (text) => {
 const checkForOcelot = (text) => {
 	if (text) {
 		return OCELOT_REGEXP.test(text);
+	}
+	return false;
+};
+
+const checkForJazzHands = (text) => {
+	if (text) {
+		return JAZZHANDS_REGEXP.test(text);
 	}
 	return false;
 };
@@ -101,6 +109,11 @@ ArcherBot.message(async ({ message, say }) => {
 
 	else if (checkForOcelot(message.text)) {
 		const archerResponse = getResponse('ocelot');
+		await say(archerResponse);
+	}
+
+	else if (checkForJazzHands(message.text)) {
+		const archerResponse = getResponse('jazzHands');
 		await say(archerResponse);
 	}
 
