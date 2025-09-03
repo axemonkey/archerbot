@@ -40,7 +40,6 @@ const adjectives = {
   'tasty': 3,
   'dead':1,
   'sexy': 5,
-  'black': 4,
   'dry': 3,
   'drunk': 3,
   'round': 4,
@@ -49,7 +48,6 @@ const adjectives = {
   'thin': 2,
   'purple': 2,
   'blond': 5,
-  'asian': 4,
   'vigorously': 5,
   'hardening': 5,
   'spunk': 10
