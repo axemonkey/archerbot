@@ -96,7 +96,7 @@ const getUserById = async (userId) => {
 
 ArcherBot.message(async ({ message, say }) => {
 	if (checkForRollcall(message.text)) {
-		const archerResponse = getResponse('rollcall');
+		const archerResponse = getResponse('rollcallResponse');
 		await say(archerResponse);
 	}
 
