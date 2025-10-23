@@ -19,7 +19,14 @@ const DANGER_ZONE_REGEXP =
 const RAMPAGE_REGEXP = /rampage/ig;
 const OCELOT_REGEXP = /ocelot/ig;
 const JAZZHANDS_REGEXP = /jazz hands/ig;
+const ROLLCALL_REGEXP = /(rollcall|roll call)/ig;
 
+const checkForRollcall = (text) => {
+	if (text) {
+		return ROLLCALL_REGEXP.test(text);
+	}
+	return false;
+};
 
 const checkForPhrasing = (text) => {
 	if (text) {
@@ -88,7 +95,12 @@ const getUserById = async (userId) => {
 
 
 ArcherBot.message(async ({ message, say }) => {
-	if (checkForPhrasing(message.text)) {
+	if (checkForRollcall(message.text)) {
+		const archerResponse = getResponse('rollcall');
+		await say(archerResponse);
+	}
+
+	else if (checkForPhrasing(message.text)) {
 		const archerResponse = getResponse('phrasing');
 		await say(archerResponse);
 	}
