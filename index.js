@@ -19,7 +19,7 @@ const DANGER_ZONE_REGEXP =
 const RAMPAGE_REGEXP = /rampage/ig;
 const OCELOT_REGEXP = /ocelot/ig;
 const JAZZHANDS_REGEXP = /jazz hands/ig;
-const ROLLCALL_REGEXP = /(rollcall | roll call)/ig;
+const ROLLCALL_REGEXP = /(rollcall|roll call)/ig;
 
 const checkForRollcall = (text) => {
 	if (text) {
