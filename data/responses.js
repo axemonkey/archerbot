@@ -108,6 +108,7 @@ const random = [
   'Hey, can I order some pie? Or have you single-handedly depleted the Global Strategic Pie Reserves?',
   'Ray forgot the gum!',
   'I WANNA FLY THE TRAIN!',
+  'Okay then I guess just pout!',
 
   'https://giphy.com/gifs/archerfx-fxx-archerfxx-fxnetworks-dAQnJ2qMmMzA0tqmeG',
   'https://giphy.com/gifs/archer-sterling-bKVmcaeGR8LF6',
@@ -153,10 +154,6 @@ const leaveEvt = [
 const welcomeMsg = 'Was anyone looking for the worlds greatest secret agent?' +
   '\n If not, just say my name `Sterling` or `Archer` and I’ll be there... or not. It’s not like I’m your servant like Woodhouse.';
 
-const rollcallResponse = [
-  'Okay then I guess just pout!',
-];
-
 function buildResponses() {
   return {
     phrasing,
@@ -170,7 +167,6 @@ function buildResponses() {
     welcomeMsg,
     ocelot,
     jazzHands,
-    rollcallResponse,
   }
 }
 
@@ -178,10 +174,6 @@ function all() {
   const allResponses = [];
 
   const responses = buildResponses();
-
-  responses.rollcallResponse.forEach(function (rollcallResp) {
-    allResponses.push({ type: 'ROLLCALL', text: rollcallResp });
-  });
 
   responses.phrasing.forEach(function (phraseResp) {
     allResponses.push({type: 'PHRASING', text: phraseResp});
