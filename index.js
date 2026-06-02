@@ -18,7 +18,7 @@ const DANGER_ZONE_REGEXP =
   /((danger|peril|trouble|unsafe|deadly|precarious|risky)+.*(zone|area|place|location|spot|realm|territory|section)+|(zone|area|place|location|spot|realm|territory|section)+.*(danger|peril|trouble|unsafe|deadly|precarious|risky)+)/ig;
 const RAMPAGE_REGEXP = /rampage/ig;
 const OCELOT_REGEXP = /ocelot/ig;
-const JAZZHANDS_REGEXP = /(jazzhands|jazz hands)/ig;
+const JAZZHANDS_REGEXP = /(jazzhands|jazz hands|jazz)/ig;
 const ROLLCALL_REGEXP = /(rollcall|roll call)/ig;
 
 const checkForRollcall = (text) => {
