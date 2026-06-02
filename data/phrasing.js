@@ -1,6 +1,6 @@
 /**
  * Created by cameronriera on 4/21/16.
- * Modified by Clive Murray on 17/12/2021, because that's how you write a date, idiot.
+ * Modified by Clive Murray on 17/12/2021, because that's how you write a date.
  */
 
 'use strict';
